@@ -1,0 +1,78 @@
+
+<div class="document">
+<header class="header">
+    <img src="./../assets/images/aik-logo-green.png" alt="Aik Banka">
+  </header>
+  <div class="container">
+
+    <div class="left-container">
+      <h2 class="title"><b>Kreditni kalkulator</b></h2>
+
+      <div class="block">
+        <p class="info">Iznos (RSD):</p>
+        <label>200k </label>
+        <mat-slider 
+        thumbLabel
+        [displayWith]='formatLabel'
+        min='1' max='120000'></mat-slider>
+        <label>1200k</label>
+      </div>
+
+      <div class="block">
+        <p class="info">Period otplate (meseci):</p>
+        <label>100 </label>
+        <mat-slider 
+        thumbLabel
+        [displayWith]='formatLabel'
+        min='100' max='600'></mat-slider>
+        <label>600 </label>
+      </div>
+
+      <div class="calc">
+        <div class="question">
+          <p class="quest">Prenos plate u AIK banku?</p>
+          <!-- <mat-radio-button></mat-radio-button> -->
+          <div class="radio">
+           <mat-radio-button value='Da' color='warn'>Da</mat-radio-button>
+           <mat-radio-button value='Ne' color='warn'>Ne</mat-radio-button>
+          </div>
+          <!-- <Label (click)='onClick()'>{{ da }}</Label>
+          <Label (click)='onClick()'>{{ ne }}</Label> -->
+        </div>
+       <div class="button">
+        <button class="calculate">Izracunaj</button>
+       </div>
+        
+      </div>
+     
+    </div>
+    <div class="right-container">
+      <h2 class="credit"><b>Informacije o kreditu</b></h2>
+      <div class="information">
+        <p class="data">Podaci</p>
+        <div class="text">
+          <p>Iznos kredita: <b>500.000 RSD</b></p>
+          <p>Period otplate: 100 meseci</p>
+          <p><b>Sa prenosom plate u AIK banku.</b></p>
+        </div>
+      </div>
+
+      <hr>
+    
+      <div class="information">
+        <p class="data">Ponuda</p>
+        <div class="text">
+          <p>Mesecna rata: 128000 RSD</p>
+          <p>Efektivna kamatna stopa: </p>
+          <p>Ukupna kamata: </p>
+          <p>Ukupni iznos otplate: </p>
+          <p><b>Naknade i troskovi: </b></p>
+        </div>
+      </div>
+      
+      <button class="confirm">Potvrdi</button>
+    </div>
+  </div>
+</div>
+
+  

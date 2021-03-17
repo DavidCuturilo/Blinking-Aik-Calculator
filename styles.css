@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100vh; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-slider-track-fill, .mat-slider-thumb-label, .mat-slider-thumb, .mat-slider-track-background {
+    background-color:white !important;
+}
+
+.mat-slider-thumb-label {
+    margin-top: 26px !important;
+    transform: rotate(45deg) !important;
+    border-radius: 50% !important;
+}
+
+.mat-slider-thumb {
+    transform: scale(0) !important;
+}
+
+.mat-slider-thumb-label-text {
+    opacity: 1 !important;
+    padding-bottom: 60px !important;
+    color: white !important;
+    font-size: large;
+}
