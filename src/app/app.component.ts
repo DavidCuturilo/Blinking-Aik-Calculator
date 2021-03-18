@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aik-calculator';
+  isAikPaySelected = true;
+
+  formatLabel(value: number) {
+    if (value >= 1000) {
+      return Math.round(value / 100) + 'k';
+    }
+
+    return value;
+  }
+  onSelect(){
+    this.isAikPaySelected=!this.isAikPaySelected;
+  }
+
+
 }
